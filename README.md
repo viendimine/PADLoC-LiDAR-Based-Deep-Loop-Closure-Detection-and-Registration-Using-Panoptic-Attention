@@ -50,3 +50,10 @@ KITTI Dataset, Ford Campus ,In-House Freiburg
 ### Compare with OverlapNet-
 * PADLoC and LCDNet detect more loop closures correctly than OverlapNet.
 * PADLoC reduces the number of false positives better than the other methods.
+
+## Conclusion-
+PADLoC is highly effective in detecting loop closures, especially when trained and tested on similar datasets. It performs well across different datasets, showing its robustness and effectiveness in loop closure detection for autonomous driving applications.
+
+## Efficiency-
+PADLoC uses much less memory (about one-third) compared to DCP, indicating it is less complex and more efficient in terms of memory usage.
+It processes point clouds quickly, making it suitable for real-time applications in autonomous driving and other areas where rapid and efficient processing is crucial.
