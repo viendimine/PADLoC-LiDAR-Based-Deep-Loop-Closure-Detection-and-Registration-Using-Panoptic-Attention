@@ -26,3 +26,27 @@ Instead of focusing on small parts, the robot summarizes the entire room into on
 
 ### Deep Learning-Based Methods-
 * PointNetVLAD-This is a deep learning approach built on top of the PointNet architecture. It learns to create compact descriptors automatically from the 3D point cloud data, making it more flexible and potentially more accurate.
+
+
+## Loss Function-
+When training a robot to understand its environment using LiDAR data, we use a loss function to guide the learning process. This total loss function is a combination of three different types of losses:
+### Triplet Loss-
+Helps the robot recognize when it has returned to a previously visited place.
+### Geometric Loss-
+Ensures the robot accurately maps and understands the geometric structure of its surroundings.
+### Panoptic Loss-
+Helps the robot differentiate between different objects and understand their roles in the environment.
+
+## Evaluation-
+
+### Datasets Used-
+KITTI Dataset, Ford Campus ,In-House Freiburg
+
+#### Results-
+* KITTI Dataset-PADLoC achieves the highest AP and Max-F1 scores.
+* Ford Dataset-PADLoC gets the highest AP and EP.
+* Freiburg Dataset-PADLoC achieves the highest Max-F1 score and the second-best AP and EP.
+
+### Compare with OverlapNet-
+* PADLoC and LCDNet detect more loop closures correctly than OverlapNet.
+* PADLoC reduces the number of false positives better than the other methods.
